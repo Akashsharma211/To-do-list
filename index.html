@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List with Speech Recognition</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <div id="main-flex">
+    <div id="container">
+      <h2>To-Do List</h2>
+      <div id="analog-clock">
+        <div class="clock-face">
+          <div class="hand hour"></div>
+          <div class="hand minute"></div>
+          <div class="hand second"></div>
+          <div class="center-dot"></div>
+        </div>
+      </div>
+      <button id="toggleMode">🌞 Day/Night</button>
+      <br><br>
+      <input type="text" id="taskInput" placeholder="Enter a new task">
+      <button id="addBtn">Add Task</button>
+      <button id="startBtn">🎤 Voice Mode</button>
+      <ul id="taskList"></ul>
+      <div id="status"></div>
+    </div>
+    <div id="calendar-container">
+      <div id="calendar-header">
+        <button id="prevMonth">&lt;</button>
+        <span id="calendar-month"></span>
+        <button id="nextMonth">&gt;</button>
+      </div>
+      <table id="calendar-table">
+        <thead>
+          <tr>
+            <th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th>
+          </tr>
+        </thead>
+        <tbody id="calendar-body"></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="todolist.js"></script>
+    <footer id="copyright-footer">
+    &copy; 2025 AKASH KUMAR SHARMA. All rights reserved.
+  </footer>
+</body>
+
+</html>
